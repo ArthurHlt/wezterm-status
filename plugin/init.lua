@@ -202,7 +202,7 @@ end
 
 wezterm.on('update-status', function(window, pane)
   ---@type TabBarColor
-  local palette = window:effective_config().resolved_palette.tab_bar.active_tab
+  local palette = window:effective_config().resolved_palette.tab_bar_style.active_tab_right
   local cells = Cells:new()
 
   cells:push(palette.fg_color, palette.bg_color, config.ui.separators.arrow_solid_right)
